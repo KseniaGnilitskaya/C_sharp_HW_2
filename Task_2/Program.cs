@@ -4,9 +4,9 @@ int number1 = int.Parse(Console.ReadLine());
 Console.Write("Enter the second number: ");
 int number2 = int.Parse(Console.ReadLine());
 
-if (number1*number1 == number2){
-    Console.Write($"{number2} is a square of {number1}");
+if (number1*number1 == number2 | number2*number2 == number1){
+    Console.Write("Your numbers are multiple of each other");
 }
 else{
-    Console.Write($"{number2} is not a square of {number1}");
+    Console.Write("Your numbers are not multiple of each other");
 }
